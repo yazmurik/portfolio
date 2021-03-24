@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: url("../img/background.png") fixed center no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* ----------------------NAVBAR------------------- */
+
+#main-nav {
+  transition: all 0.3s linear;
+  font-family: "Fira Code", monospace;
+}
+
+#main-nav .navbar-toggler-icon {
+  height: 12px;
+  border-top: 2px solid #f4c613;
+  border-bottom: 2px solid #f4c613;
+}
+#main-nav .nav-link {
+  color: #f4c613;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+#main-nav .nav-link:hover {
+  color: #e5f327;
+  border-bottom: 3px solid gray;
+}
+#main-nav .active {
+  color: white;
+}
+.border-nav {
+  border-bottom: 3px solid #f4c613;
+}
+
+/* ----------------------HOME------------------- */
+#home {
+  position: relative;
+  min-height: 100vh;
+}
+#home img {
+  height: 400px;
+  width: 360px;
+}
+#home-btn {
+  margin-top: 1.5rem;
+}
+#home .home-content {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+}
+#home .home-h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 0.6rem;
+}
+#home .home-h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3rem;
+  color: #ccd6f6;
+  letter-spacing: 0.6rem;
+  margin: 2rem 0;
+}
+
+#home .home-h5 {
+  color: #f4c613;
+  font-family: "Fira Code", monospace;
+  margin: 1rem 0 2rem 0;
+}
+
+/* ----------------------ABOUT------------------- */
+#about {
+  min-height: 70vh;
+}
+#about .container {
+  padding-top: 5rem;
+}
+#about .about-h1 {
+  color: white;
+  letter-spacing: 0.4rem;
+}
+#about .about-para {
+  font-family: "Fira Code", monospace;
+  color: #ccd6f6;
+  font-size: 0.8rem;
+}
+#about .icons-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+#about .icon-bg {
+  background: #ccd6f6;
+  border-radius: 15%;
+  padding: 2px;
+}
+/* ----------------------PROJECTS------------------- */
+
+#projects {
+  min-height: 100vh;
+}
+#projects .container {
+  padding-top: 5rem;
+}
+#projects .project-h1 {
+  color: white;
+  letter-spacing: 0.4rem;
+}
+#projects .project-para {
+  font-family: "Fira Code", monospace;
+  color: #ccd6f6;
+  font-size: 0.9rem;
+}
+#projects .card {
+  border: 2px solid gray;
+  transition: all 0.7s ease;
+}
+#projects .card:hover {
+  background: #f4c613;
+  transform: scale(1.03);
+}
+#projects .card p {
+  font-family: "Fira Code", monospace;
+  line-height: normal;
+  font-size: 12px;
+}
+#projects .card h3 {
+  color: #f4c613;
+  transition: all 0.7s ease;
+}
+#projects .card:hover h3 {
+  color: white;
+}
+#projects .card .btn {
+  transition: all 0.7s ease;
+}
+#projects .card:hover .btn {
+  background-color: white;
+}
+#projects .card .btn:hover {
+  background-color: gray;
+}
+#projects .black-bg {
+  background-color: #2e2e2e;
+  color: white;
+}
+#projects .black-bg:hover {
+  color: black;
+}
+#projects .project-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ----------------------CONTACT------------------- */
+
+#contact {
+  min-height: 50vh;
+}
+
+#contact .contact-h1 {
+  color: white;
+  letter-spacing: 0.4rem;
+}
+#contact .contact-para {
+  color: #ccd6f6;
+  font-size: 1.5rem;
+}
+/* ----------------------FOOTER------------------- */
+#footer {
+  background-color: #343a40;
+  color: white;
+  padding: 2.5rem 0;
+}
+#footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ----------------------MEDIA QUERIES FOR RESPONSIVENESS------------------- */
+@media (max-width: 991px) and (max-height: 800px) {
+  #navbar {
+    min-height: 35vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-h5 {
+    margin-top: 3rem !important;
+  }
+  .card {
+    margin-bottom: 2rem !important;
+  }
+  .navbar-toggler {
+    margin-right: 1.5rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .navbarBrand-text {
+    font-size: 1.5rem !important;
+    padding-top: 0.5rem;
+  }
+  #contact button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .home-h1 {
+    font-size: 2rem !important;
+  }
+  .home-h2 {
+    font-size: 1.2rem !important;
+  }
+  .about-h1 {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.2rem;
+  }
+  .about-para {
+    font-size: 0.5rem;
+  }
+  .icon-html {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 499px) and (max-width: 767px) {
+  .home-h1 {
+    font-size: 2rem !important;
+  }
+  .home-h2 {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav {
+    margin-left: 4rem !important;
+  }
+}
