@@ -16,7 +16,7 @@ body {
 
 #main-nav {
   transition: all 0.3s linear;
-  font-family: "Fira Code", monospace;
+  font-family: 'Varela Round', sans-serif;
 }
 
 #main-nav .navbar-toggler-icon {
@@ -60,22 +60,22 @@ body {
   transform: translateY(-50%);
 }
 #home .home-h1 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 4rem;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3rem;
   color: white;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.2rem;
 }
 #home .home-h2 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 3rem;
-  color: #ccd6f6;
-  letter-spacing: 0.6rem;
-  margin: 2rem 0;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  margin: 1rem 0;
 }
 
 #home .home-h5 {
   color: #f4c613;
-  font-family: "Fira Code", monospace;
+  font-family: 'Varela Round', sans-serif;
   margin: 1rem 0 2rem 0;
 }
 
@@ -90,10 +90,13 @@ body {
   color: white;
   letter-spacing: 0.4rem;
 }
-#about .about-para {
-  font-family: "Fira Code", monospace;
-  color: #ccd6f6;
-  font-size: 0.8rem;
+.about-para {
+  font-family: 'Varela Round', sans-serif;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.homeLanguage{
+  font-weight: bold;
 }
 #about .icons-list {
   list-style: none;
@@ -103,7 +106,7 @@ body {
   margin-top: 3rem;
 }
 #about .icon-bg {
-  background: #ccd6f6;
+  background: #ffffff;
   border-radius: 15%;
   padding: 2px;
 }
@@ -116,13 +119,14 @@ body {
   padding-top: 5rem;
 }
 #projects .project-h1 {
+  font-family: 'Varela Round', sans-serif;
   color: white;
   letter-spacing: 0.4rem;
 }
 #projects .project-para {
-  font-family: "Fira Code", monospace;
-  color: #ccd6f6;
-  font-size: 0.9rem;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  font-size: 1.2rem;
 }
 #projects .card {
   border: 2px solid gray;
@@ -133,7 +137,7 @@ body {
   transform: scale(1.03);
 }
 #projects .card p {
-  font-family: "Fira Code", monospace;
+  font-family: 'Varela Round', sans-serif;
   line-height: normal;
   font-size: 12px;
 }
